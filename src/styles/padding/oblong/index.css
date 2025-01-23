@@ -1,0 +1,15 @@
+@utility po-xs {
+  @apply px-1.5 py-0.5;
+}
+
+@utility po-sm {
+  @apply px-2 py-1;
+}
+
+@utility po-md {
+  @apply px-4 py-2;
+}
+
+@utility po-lg {
+  @apply px-8 py-4;
+}

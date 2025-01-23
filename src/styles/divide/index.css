@@ -1,0 +1,14 @@
+@utility divide-default {
+  @apply divide-white;
+  @apply dark:divide-black;
+}
+
+@utility divide-opposite {
+  @apply divide-black;
+  @apply dark:divide-white;
+}
+
+@utility divide-contrast {
+  @apply divide-black/10;
+  @apply dark:divide-white/15;
+}

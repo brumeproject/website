@@ -1,0 +1,28 @@
+@utility text-default {
+  @apply text-black;
+  @apply dark:text-white;
+}
+
+@utility text-opposite {
+  @apply text-white;
+  @apply dark:text-black;
+}
+
+@utility text-contrast {
+  @apply text-black text-opacity-50;
+  @apply dark:text-white dark:text-opacity-50;
+}
+
+@utility text-high-contrast {
+  @apply text-black text-opacity-75;
+  @apply dark:text-white dark:text-opacity-75;
+}
+
+@utility text-white-high-contrast {
+  @apply text-white text-opacity-75;
+  @apply dark:text-white dark:text-opacity-75;
+}
+
+@utility text-colored {
+  @apply text-purple-400;
+}
