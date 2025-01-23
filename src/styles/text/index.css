@@ -30,7 +30,7 @@
   }
 }
 
-@utility text-default-double-contrast {
+@utility text-default-half-contrast {
   @apply text-black/75;
 
   @variant dark {
@@ -38,7 +38,7 @@
   }
 }
 
-@utility text-opposite-double-contrast {
+@utility text-opposite-half-contrast {
   @apply text-white/75;
 
   @variant dark {
