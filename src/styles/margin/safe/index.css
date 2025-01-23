@@ -11,7 +11,7 @@
 }
 
 @utility mt-safe {
-  margin-bottom: env(safe-area-inset-top);
+  margin-top: env(safe-area-inset-top);
 }
 
 @utility my-safe {

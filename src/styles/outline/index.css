@@ -1,9 +1,15 @@
 @utility outline-default {
   @apply outline-white;
-  @apply dark:outline-black;
+
+  @variant dark {
+    @apply outline-black;
+  }
 }
 
 @utility outline-opposite {
   @apply outline-black;
-  @apply dark:outline-white;
+
+  @variant dark {
+    @apply outline-white;
+  }
 }
