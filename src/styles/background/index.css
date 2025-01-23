@@ -1,29 +1,51 @@
+@utility bg-backdrop {
+  @apply bg-neutral-500/50;
+}
+
 @utility bg-default {
   @apply bg-white;
-  @apply dark:bg-black;
+
+  @variant dark {
+    @apply bg-black;
+  }
 }
 
 @utility bg-opposite {
   @apply bg-black;
-  @apply dark:bg-white;
+
+  @variant dark {
+    @apply bg-white;
+  }
 }
 
-@utility bg-opposite-hover {
-  @apply bg-black/80;
-  @apply dark:bg-white/80;
+@utility bg-default-contrast {
+  @apply bg-black/[0.05];
+
+  @variant dark {
+    @apply bg-white/[0.075];
+  }
 }
 
-@utility bg-contrast {
-  @apply bg-black/5;
-  @apply dark:bg-white/[0.075];
+@utility bg-opposite-contrast {
+  @apply bg-black/[0.95];
+
+  @variant dark {
+    @apply bg-white/[0.925];
+  }
 }
 
-@utility bg-contrast-hover {
-  @apply bg-black/10;
-  @apply dark:bg-white/15;
+@utility bg-default-double-contrast {
+  @apply bg-black/[0.1];
+
+  @variant dark {
+    @apply bg-white/[0.15];
+  }
 }
 
-@utility bg-backdrop {
-  @apply bg-neutral-500/50;
-  @apply dark:bg-neutral-500/50;
+@utility bg-opposite-double-contrast {
+  @apply bg-black/[0.9];
+
+  @variant dark {
+    @apply bg-white/[0.85];
+  }
 }
