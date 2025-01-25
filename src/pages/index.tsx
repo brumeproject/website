@@ -1,7 +1,11 @@
 import { AnchorChip } from "@/libs/ui/anchors";
+import Head from "next/head";
 
 export default function Home() {
   return <div className="p-safe h-full w-full flex flex-col overflow-y-scroll animate-opacity-in">
+    <Head>
+      <title>Brume</title>
+    </Head>
     <div className="grow flex flex-col w-full m-auto max-w-6xl">
       <div className="h-[100dvh] flex flex-col p-8">
         <div className="h-[max(24rem,100dvh_-_16rem)] flex flex-col justify-center items-center">
