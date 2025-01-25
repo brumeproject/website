@@ -18,8 +18,7 @@ export default function Document() {
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/appicon.png" />
       </Head>
-      <body className="antialiased"
-        data-theme="light">
+      <body className="antialiased">
         <Main />
         <NextScript />
       </body>
