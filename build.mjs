@@ -14,6 +14,8 @@ export function* walkSync(dir) {
   }
 }
 
+fs.rmSync(`./out/404.html`)
+
 /**
  * Replace all .html files by loader.html
  */
