@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@hazae41/immutable": "^1.0.13",
-    "@hazae41/labase": "^1.0.7",
+    "@hazae41/labase": "^1.0.8",
     "@heroicons/react": "^2.2.0",
     "i": "^0.3.7",
     "next": "15.1.6",
