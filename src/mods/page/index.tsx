@@ -18,8 +18,6 @@ export function Page() {
     }, 5000)
   }, [])
 
-  console.log("lol")
-
   return <div className="p-safe h-full w-full flex flex-col overflow-y-scroll animate-opacity-in">
     <Head>
       <title>Brume</title>
