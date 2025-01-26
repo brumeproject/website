@@ -79,3 +79,5 @@ const version = crypto.createHash("sha256").update(replaced).digest("hex").slice
 fs.writeFileSync(`./out/service_worker.js`, replaced, "utf8")
 fs.writeFileSync(`./out/service_worker.latest.js`, replaced, "utf8")
 fs.writeFileSync(`./out/service_worker.${version}.js`, replaced, "utf8")
+
+console.log("version", version)
