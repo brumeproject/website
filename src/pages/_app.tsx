@@ -24,5 +24,14 @@ export default function App({ Component, pageProps }: AppProps) {
     update?.current?.().catch(console.error)
   }, [update])
 
-  return <Component {...pageProps} />;
+  const [client, setClient] = useState(false)
+
+  useEffect(() => {
+    setClient(true)
+  }, [])
+
+  if (!client)
+    return null
+
+  return <Component {...pageProps} />
 }

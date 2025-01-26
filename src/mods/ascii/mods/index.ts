@@ -1,2 +1,3 @@
-export * from "./closed/index";
-export * from "./normal/index";
+export * from "./closed";
+export * from "./normal";
+

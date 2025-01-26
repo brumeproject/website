@@ -1,1 +1,1 @@
-export * as Ascii from "./mods/index";
+export * as Ascii from "./mods";
