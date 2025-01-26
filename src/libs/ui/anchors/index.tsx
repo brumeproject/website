@@ -1,6 +1,6 @@
+import { Booleanish } from "@/libs/booleanish"
 import { AnchorProps } from "@/libs/react/props/anchor"
 import { ChildrenProps } from "@/libs/react/props/children"
-import { Booleanish } from "@/libs/types/boolean"
 
 export function AnchorGapperAndClicker(props: ChildrenProps) {
   const { children } = props
