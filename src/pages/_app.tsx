@@ -24,7 +24,9 @@ export default function App({ Component, pageProps }: AppProps) {
     update?.current?.().catch(console.error)
   }, [update])
 
-  console.log("update", update?.current)
+  useEffect(() => {
+    console.log("update", update?.current)
+  }, [update])
 
   const [client, setClient] = useState(false)
 
