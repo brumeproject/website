@@ -1,5 +1,5 @@
 import { Locale } from "@/mods/locale"
-import { LocaleContext } from "@/mods/locale/mods/context"
+import { Localizer } from "@/mods/locale/mods/context"
 import { Page } from "@/mods/page"
 
 export interface Params {
@@ -22,7 +22,7 @@ export function getStaticProps(context: {
 export default function Main(props: Params) {
   const { locale } = props
 
-  return <LocaleContext value={locale}>
+  return <Localizer value={locale}>
     <Page />
-  </LocaleContext>
+  </Localizer>
 }

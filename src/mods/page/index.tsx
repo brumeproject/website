@@ -25,7 +25,8 @@ export function Page() {
     <div className="grow flex flex-col w-full m-auto max-w-6xl">
       <div className="h-[100dvh] flex flex-col p-8">
         <div className="h-[max(24rem,100dvh_-_16rem)] flex flex-col justify-center items-center">
-          <div className="whitespace-pre-wrap font-[monospace] text-[min(1vw,8px)] leading-[min(1vw,8px)]">
+          <div className="whitespace-pre-wrap font-[monospace] text-[min(1vw,8px)] leading-[min(1vw,8px)]"
+            dir="ltr">
             {closed ? Ascii.closed : Ascii.normal}
           </div>
         </div>
