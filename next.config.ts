@@ -76,6 +76,8 @@ const nextConfig: NextConfig = withNextSidebuild({
   },
 
   async headers() {
+    if (process.env.NODE_ENV === "development")
+      return []
     return [
       {
         source: "/:path*",
