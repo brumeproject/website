@@ -76,7 +76,7 @@ const nextConfig: NextConfig = withNextSidebuild({
   },
 
   async headers() {
-    if (process.env.NODE_ENV === "development")
+    if (process.env.NODE_ENV !== "production")
       return []
     return [
       {
