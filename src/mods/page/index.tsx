@@ -5,17 +5,29 @@ import { useLocaleContext } from "@/mods/locale/mods/context";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
+async function timeout(delay: number) {
+  return new Promise(ok => setTimeout(ok, delay))
+}
+
+async function loop(callback: () => Promise<void>, signal: AbortSignal) {
+  while (!signal.aborted) await callback()
+}
+
 export function Page() {
   const locale = useLocaleContext().getOrThrow()
   const [closed, setClosed] = useState(false)
 
   useEffect(() => {
-    setInterval(() => {
+    const aborter = new AbortController()
+
+    loop(async () => {
+      await timeout(4000)
       setClosed(true)
-      setTimeout(() => {
-        setClosed(false)
-      }, 150)
-    }, 5000)
+      await timeout(250)
+      setClosed(false)
+    }, aborter.signal).catch(console.error)
+
+    return () => aborter.abort()
   }, [])
 
   return <div className="p-safe h-full w-full flex flex-col overflow-y-scroll animate-opacity-in">
