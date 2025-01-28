@@ -43,43 +43,50 @@ export function Page() {
           <AnchorChip
             href="https://wallet.brume.money"
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+            dir="ltr">
             Wallet
           </AnchorChip>
           <AnchorChip
             href="https://dexscreener.com/ethereum/0xD0EbFe04Adb5Ef449Ec5874e450810501DC53ED5"
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+            dir="ltr">
             $BRUME
           </AnchorChip>
           <AnchorChip
             href="https://x.com/BrumeProject"
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+            dir="ltr">
             X.com
           </AnchorChip>
           <AnchorChip
             href="https://discord.gg/KVEPWfN9jK"
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+            dir="ltr">
             Discord
           </AnchorChip>
           <AnchorChip
             href="https://juicebox.money/v2/p/748?tabid=about"
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+            dir="ltr">
             Juicebox
           </AnchorChip>
           <AnchorChip
             href="https://github.com/brumeproject"
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+            dir="ltr">
             GitHub
           </AnchorChip>
           <AnchorChip
             href="https://www.tldraw.com/s/v2_c_WZN9Q33cGQyF_RdbXqLUt"
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+            dir="ltr">
             Tldraw
           </AnchorChip>
         </div>
